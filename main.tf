@@ -2,13 +2,9 @@ terraform {
   backend "s3" {
     bucket = "github-terraform-tfstates-aws"
     key    = "infrastructure/terraform.tfstate"
-    region = var.aws_region
-    organization = "dapiroy"
-    workspaces {
-      name = "AWS-dapiroy"
+    region = "us-east-1"
     }
   }
-}
 
 
 resource "aws_instance" "myec2" {
