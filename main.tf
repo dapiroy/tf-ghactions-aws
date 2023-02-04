@@ -8,6 +8,6 @@ terraform {
 
 
 resource "aws_instance" "myec2" {
-   ami = "ami-082b5a644766e0e6f"
+   ami = "ami-0aa7d40eeae50c9a9"
    instance_type = "t2.micro"
 }
